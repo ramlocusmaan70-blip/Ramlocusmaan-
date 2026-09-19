@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Alex Brush', cursive;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.gold-foil-text {
+  background: linear-gradient(135deg, #9C721D 0%, #D4AF37 35%, #F5E5B8 55%, #AA7C11 80%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, #C5A059 0%, #E6CA85 50%, #A88028 100%);
+}
+
+.card-paper-texture {
+  background-color: #FDFAF5;
+  background-image: radial-gradient(#E8DFD0 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #D4AF37 0%, #B8860B 50%, #7D5B08 100%);
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6), inset -2px -2px 4px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(100, 70, 20, 0.35);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
